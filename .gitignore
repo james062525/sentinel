@@ -1,3 +1,18 @@
+*.iml
+.gradle/
+gradle/
+*.properties
+*.properties
+gradlew
+gradlew.bat
+.idea/
+.DS_Store
+build/
+.externalNativeBuild
+app/build/
+app/libs/
+
+
 # Built application files
 *.apk
 *.ap_
