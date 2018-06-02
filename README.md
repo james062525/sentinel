@@ -10,7 +10,7 @@ Sentinel's goals are
 * This project is about designing a software tool capable of talking to your vehicle's engine control unit (ECU) and getting all sorts of data from it, especially particular trouble codes.
 * User can reads data from his vehicle online and decides to send to maintenance plant (service center, motor research center) via cloud Service.
 
-![simulation](./screen.gif )
+![simulation]( ./screen.gif )
 
 Installation
 ---------------
