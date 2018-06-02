@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+/*
+    device  api
+    4.4     19
+    5.0     21
+    6.0     23
+ */
+android {
+    compileSdkVersion 27
+    // better same as compileSdkVersion
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.motor.sentinel"
+        minSdkVersion 21
+        // do not large targetSdkVersion > 22
+        // Always make the targetSdkVersion greater than equal to the minSdkVersion
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+/*
+ * slf4android version A
+ https://github.com/interdroid/slf4android
+ https://www.slf4j.org/android/
+ * slf4android version B
+ http://blog.brightinventions.pl/maven-repo/pl.brightinventions/slf4android.html
+ https://github.com/bright/slf4android
+*/
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+/*
+  uncheck offline:  Build-> Gradle -> Global Gradle Settings
+  https://mvnrepository.com/artifact/org.mockito
+  https://mvnrepository.com/junit/junit
+*/
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    /* implementation 'com.android.support:recyclerview-v7:27.1.1' */
+    testImplementation 'junit:junit:4.12'
+
+    testImplementation 'org.mockito:mockito-core:2.8.47'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'org.mockito:mockito-android:2.8.47'
+
+    implementation('com.github.bright:slf4android:0.1.5') {
+        transitive = true
+    }
+}
+
+// disable unnecessary lint check
+apply plugin: 'pmd'
+
+task pmd(type: Pmd) {
+        ruleSets = ["java-basic", "java-braces", "java-strings",
+                    "java-android", "java-imports"/*, "java-codesize",
+                    "java-design" */, "java-unusedcode"
+                   ]
+        source 'src'
+        include '**/*.java'
+        exclude '**/gen/**'
+        exclude '**/androidTest/**'
+        reports {
+            xml.enabled = true
+            html.enabled = true
+        }
+}
+check.finalizedBy 'pmd'
+

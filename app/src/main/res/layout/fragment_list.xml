@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+  <!-- xmlns:tools="http://schemas.android.com/tools" -->
+  <!-- tools:context="com.motor.sentinel.views.DiagnosticFragment" -->
+
+  <TextView
+    android:id="@+id/list_ls_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="24sp" />
+
+    <!--
+    android:layout_gravity="center_vertical"
+    android:max="100"
+    android:progress="50"
+    -->
+  <ProgressBar
+    android:id="@+id/list_ls_bar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <ListView
+    android:id="@+id/list_ls_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

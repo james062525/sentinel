@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Note that in XML, the first option starts at index 1 (i.e. android:defaultValue="1") instead of 0 -->
+<resources>
+    <string-array name="conf_obd_protocols_entries">
+        <item>AUTO</item>
+        <item>SAE_J1850_PWM</item>
+        <item>SAE_J1850_VPW</item>
+        <item>ISO_9141_2</item>
+        <item>ISO_14230_4_KWP</item>
+        <item>ISO_14230_4_KWP_FAST</item>
+        <item>ISO_15765_4_CAN</item>
+        <item>ISO_15765_4_CAN_B</item>
+        <item>ISO_15765_4_CAN_C</item>
+        <item>ISO_15765_4_CAN_D</item>
+        <item>SAE_J1939_CAN</item>
+    </string-array>
+
+    <string-array name="conf_obd_protocols_entryvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>A</item>
+    </string-array>
+
+    <string-array name="conf_imperial_metric_entries">
+        <item>Imperial</item>
+        <item>Metric</item>
+    </string-array>
+
+    <string-array name="conf_imperial_metric_entryvalues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="conf_bluetooth_secure_entries">
+        <item>Secure</item>
+        <item>Insecure</item>
+    </string-array>
+
+    <string-array name="conf_bluetooth_secure_entryvalues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+              <!-- xmlns:tools="http://schemas.android.com/tools" -->
+              <!-- tools:context="com.motor.sentinel.views.DeviceListFragment" -->
+
+    <!-- TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:text="@string/select_device"/ -->
+
+    <ProgressBar
+      android:id="@+id/device_ls_bar"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/device_bt_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_scan"/>
+
+      <!-- android:id="@+id/device_list_layout" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/device_txt_paired_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/paired_devices"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/device_ls_paired_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:stackFromBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/device_txt_found_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/found_devices"
+            android:visibility="gone"
+            />
+
+        <ListView
+            android:id="@+id/device_ls_found_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:stackFromBottom="true"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

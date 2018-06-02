@@ -1,0 +1,58 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Sentinel</string>
+
+  <!-- Main Page -->
+  <string name="main_start">Start</string>
+  <string name="main_diagnose">Diagnostic</string>
+  <string name="main_troublecode">Trouble Code</string>
+  <string name="main_config">Configuration</string>
+  <string name="main_information">Information</string>
+  <string name="bt_not_enabled_leaving">Bluetooth was not enabled</string>
+
+  <!--  DeviceListFragment -->
+  <string name="select_device">Select paired device\nScan new devices</string>
+  <string name="paired_devices">Paired devices</string>
+  <string name="found_devices">Available devices</string>
+  <string name="bt_scan">Scan new bluetooth devices</string>
+
+  <!-- GetTdcFragment -->
+  <string name="tdc_title">Scan Trouble Code</string>
+  <string name="state_create_socket_error">Connect bluetooth socket failure</string>
+  <string name="state_link_socket_error">Link bluetooth socket failure</string>
+  <string name="state_link_stream_error">Connect bluetooth data stream failure</string>
+
+  <!-- preferences -->
+  <string name="conf_vehicle">Vehicle Id</string>
+  <string name="conf_vehicle_id">Vehicle Id</string>
+  <string name="conf_vehicle_id_summary">Input an unique vehicle id</string>
+
+  <string name="conf_obd">OBD Preferences</string>
+  <string name="conf_obd_protocols">Select Obd Protocol</string>
+  <string name="conf_obd_protocols_summary">Select OBD Protocol</string>
+
+  <string name="conf_imperial_metric">Select Imperial/Metric unit</string>
+  <string name="conf_imperial_metric_summary">Select Imperial (Metric) unit</string>
+
+  <string name="title_pref_commands">Obd Commands</string>
+  <string name="title_pref_commands_summary">Choose Obd commands for diagnostics.</string>
+  <string name="title_pref_commands_title">Obd Commands</string>
+
+  <string name="conf_bluetooth">Bluetooth Settings</string>
+
+  <string name="conf_bluetooth_timeout">Response Timeout</string>
+  <string name="conf_bluetooth_timeout_summary">Bluetooth response timeout (millis sec.) </string>
+
+  <string name="conf_bluetooth_secure">Connecting Method</string>
+  <string name="conf_bluetooth_secure_summary">Secure and Insecure connecting </string>
+
+  <!-- error messages -->
+  <string name="no_bluetooth">Bluetooth is not available</string>
+  <string name="socket_connect_fail">Connect bluetooth socket failed</string>
+
+  <string name="conf_digit_required_minimum">Digit required and minimum </string>
+  <string name="conf_digit_required_maximum">Digit required and maximum 1000</string>
+
+  <!-- append messages -->
+  <string name="desc_start">Tap for starting</string>
+
+</resources>

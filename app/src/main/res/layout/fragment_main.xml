@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.motor.sentinel.MainFragment">
+
+    <ImageView
+        android:id="@+id/main_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/start"
+        android:contentDescription="@string/desc_start" />
+        <!--android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/colorPrimaryDark" -->
+
+    <ImageView
+        android:id="@+id/main_diagnose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/diagnostic" />
+
+    <ImageView
+        android:id="@+id/main_troublecode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/troublecode" />
+
+    <ImageView
+        android:id="@+id/main_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/information" />
+
+    <ImageView
+        android:id="@+id/main_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/configuration" />
+
+</LinearLayout>

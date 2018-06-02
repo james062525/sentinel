@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/conf_vehicle">
+        <EditTextPreference
+            android:id="@+id/conf_vehicle_id"
+            android:defaultValue=""
+            android:dialogTitle="@string/conf_vehicle_id"
+            android:key="conf_vehicle_id"
+            android:summary="@string/conf_vehicle_id_summary"
+            android:title="@string/conf_vehicle_id"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/conf_obd">
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/conf_obd_protocols"
+            android:entries="@array/conf_obd_protocols_entries"
+            android:entryValues="@array/conf_obd_protocols_entryvalues"
+            android:key="conf_obd_protocols"
+            android:summary="%s"
+            android:title="@string/conf_obd_protocols"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/conf_imperial_metric"
+            android:entries="@array/conf_imperial_metric_entries"
+            android:entryValues="@array/conf_imperial_metric_entryvalues"
+            android:key="conf_imperial_metric"
+            android:summary="%s"
+            android:title="@string/conf_imperial_metric"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/conf_bluetooth">
+        <EditTextPreference
+            android:defaultValue="20"
+            android:dialogTitle="@string/conf_bluetooth_timeout"
+            android:key="conf_bluetooth_timeout"
+            android:summary="@string/conf_bluetooth_timeout_summary"
+            android:title="@string/conf_bluetooth_timeout"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/conf_bluetooth_secure"
+            android:entries="@array/conf_bluetooth_secure_entries"
+            android:entryValues="@array/conf_bluetooth_secure_entryvalues"
+            android:key="conf_bluetooth_secure"
+            android:summary="%s"
+            android:title="@string/conf_bluetooth_secure"/>
+
+        <EditTextPreference
+            android:defaultValue="00:00:00:00:00:00"
+            android:key="conf_mac_address"
+            android:enabled="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
